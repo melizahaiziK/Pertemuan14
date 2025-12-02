@@ -1,6 +1,6 @@
 public class Percobaan2 {
    public static void main(String[] var0) {
-      Menu("Andi" ,true, "DISKON50");
+      Menu("Budi" ,true, "DISKON30");
    }
    public static void Menu(String namaPelanggan, boolean isMember, String kodePromo) {
     System.out.println("Selamat datang, " + namaPelanggan + "!");
