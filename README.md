@@ -73,4 +73,17 @@ jawaban :
 jawaban : sudah di commit
 
 4. Modifikasi kode di atas sehingga bisa memilih beberapa jenis menu berbeda serta menampilkan total keseluruhan pesanan. Bagaimana memodifikasi program sehingga pengguna dapat: memesan lebih dari satu jenis menu (misalnya menu 1 dan 3 sekaligus), dan menampilkan total keseluruhan pesanan (gabungan dari semua jenis menu)?
-jawaban : 
+jawaban : sudah di commit.
+
+PERTANYAAN PERCOBAAN 4
+1. Jelaskan mengapa penulisan parameter di praktikum 4 ditulis dengan String... namaPengunjung!
+jawaban : Karena program ingin menerima jumlah data yang berubah-ubah, dan bisa menerima berapa pun jumlah String tanpa harus mendefinisikan array secara manual
+
+2. Modifikasi method daftarPengunjung menggunakan for-each loop.
+jawaban : sudah di commit
+
+3. Bisakah menggunakan dua tipe data varargs dalam satu fungsi? Jelaskan jawaban Anda berdasarkan aturan varargs di Java, dan berikan contohnya!
+jawaban : Tidak bisa menggunakan dua tipe data dalam satu fungsi, karna berdasarkan aturan di java yaitu, hanya boleh ada satu varargs dalam satu metode, dan Varargs harus berada di posisi paling akhir dalam parameter.
+
+4. Jelaskan apa yang terjadi jika fungsi daftarPengunjung dipanggil tanpa argumen. Apakah program akan error saat kompilasi, error saat dijalankan, atau tetap berjalan? Jika tetap berjalan, bagaimana output yang dihasilkan?
+jawaban : program tidak error, dan tetap berjalan sekaligus mengeluarkan output. Output yang dihasilkan yaitu hanya "Daftar Nama Pengunjung: " tanpa adanya isi nama, karna argumennya tidak diisi, jadi tidak ada nama yang muncul didalam daftar nama pengunjung.
