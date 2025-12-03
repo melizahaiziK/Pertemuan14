@@ -87,3 +87,39 @@ jawaban : Tidak bisa menggunakan dua tipe data dalam satu fungsi, karna berdasar
 
 4. Jelaskan apa yang terjadi jika fungsi daftarPengunjung dipanggil tanpa argumen. Apakah program akan error saat kompilasi, error saat dijalankan, atau tetap berjalan? Jika tetap berjalan, bagaimana output yang dihasilkan?
 jawaban : program tidak error, dan tetap berjalan sekaligus mengeluarkan output. Output yang dihasilkan yaitu hanya "Daftar Nama Pengunjung: " tanpa adanya isi nama, karna argumennya tidak diisi, jadi tidak ada nama yang muncul didalam daftar nama pengunjung.
+
+PERTANYAAN PERCOBAAN 5 
+1. Sebutkan tahapan dan urutan eksekusi program pada Percobaan 5, mulai dari program dijalankan hingga menampilkan luas persegi panjang dan volume balok!
+jawaban :yang pertama program akan meminta kita memasukkan/menginputkan nilai panjang, lebar, dan tinggi, lalu program akan menghitung menggunakan rumus yang sudah tertulis, dan akhirnya program akan menampilkan hasil luas persegi panjang dan volume balok.
+
+2. Tuliskan output yang dihasilkan program HitungBalokNoAbsen jika pengguna memasukkan panjang = 4, lebar = 3, dan tinggi = 5. Jelaskan secara singkat alur jalannya program sampai output tersebut muncul.
+jawaban : awalnya program akan menghitung luas dengan rumus yang ada pada fungsi hitung luas yaitu "int Luas = pjg * lb;" selanjutnya program akan menghitung volume balok dengan rumus yang ada pada fungsi hitung volume yaitu "int volume = hitungLuas(a, b) * tinggi;"
+
+3. Apakah output dari program di bawah ini kemudian jelaskan alur jalannya program tersebut!
+public class programKu {
+    public static void TampilHinggakei(int i) {
+        for (int j = 1; j <= i; j++){
+            System.out.print(j);
+        }
+    }
+    public static int Jumlah (int bil1, int bil2) {
+        return (bil1+bil2);
+    }
+    public static void TampilJumlah(int bil1, int bil2) {
+        TampilHinggakei(Jumlah(bil1, bil2));
+    }
+    public static void main(String[] args) {
+        int temp = Jumlah(1, 1);
+        TampilJumlah(temp, 5);
+    }
+}
+jawaban : dimulai dari "int temp = Jumlah(1, 1);" yang berarti 1+1 = 2 lalu "TampilJumlah(temp, 5);" lalu "TampilHinggakei(Jumlah(bil1, bil2));" yang dmn bil1 adalah 2 dan bil2 adalah 5, jadi "Jumlah(2, 5) → 7" dan terakhir "TampilHinggakei(7);" jadi program akan menampilkan angka bilangan dari 1 hingga 7
+
+4. Pada saat apakah fungsi yang kita buat harus menggunakan parameter atau tidak? Pada saat apakah fungsi yang kita buat harus memiliki nilai kembalian atau tidak? Jelaskan!
+jawaban : kita bisa gunakan parameter ketika fungsi membutuhkan data dari luar agar bisa bekerja. Kita bisa gunakan nilai kembalian ketika fungsi menghasilkan perhitungan atau informasi yang perlu dipakai lagi di bagian lain dari program.
+
+5. Jelaskan kapan sebuah fungsi sebaiknya menggunakan parameter dan kapan fungsi boleh tanpa parameter, dengan mengacu pada fungsi hitungLuas dan hitungVolume di Percobaan 5.
+jawaban : kita bisa menggunakan parameter jika data yang diperlukan untuk perhitungannya berasal dari luar fungsi (bukan ditentukan sendiri oleh fungsi), dann kapan kita boleh tidak menggunakan parameter? yaituu pada saat semua data yang dibutuhkan sudah tersedia dalam fungsi, atau nilai tersebut selalu sama sehingga tidak perlu dikirim dari luas.
+
+6. Jelaskan kapan sebuah fungsi sebaiknya memiliki nilai kembalian (return value) dan kapan tidak perlu memiliki nilai kembalian, dengan mengacu pada fungsi main, hitungLuas, dan hitungVolume.
+jawaban : Fungsi perlu memiliki nilai kembalian ketika hasil perhitungannya masih akan digunakan lagi oleh bagian program lain, dan Fungsi tidak butuh return value jika tujuannya hanya menjalankan proses, bukan menghitung nilai yang dibutuhkan kembali.
