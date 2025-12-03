@@ -58,3 +58,19 @@ pada fungsi Menu() membuat program lebih mudah dibaca dan dikembangkan
 dibandingkan jika nilai-nilai tersebut ditulis langsung di dalam fungsi tanpa parameter?
 Jelaskan alasan Anda.
 jawaban : Ya, penggunaan parameter namaPelanggan dan isMember membuat program jauh lebih mudah dibaca dan dikembangkan dibandingkan jika nilainya ditulis langsung di dalam fungsi tanpa parameter.
+
+
+PERTANYAAN PERCOBAAN 3
+1. Jelaskan secara singkat kapan suatu fungsi membutuhkan nilai kembalian (return value) dan kapan fungsi tidak perlu mengembalikan nilai. Berikan minimal satu contoh dari program kafe pada Percobaan 3 untuk masing-masing kasus.
+jawaban : Fungsi membutuhkan nilai kembalian ketika fungsi tersebut harus menghasilkan suatu nilai untuk digunakan kembali, seperti yang di percobaan 3 waktu menghitung totalharga, sedangkan Fungsi tidak membutuhkan nilai kembalian ketika tugasnya hanya melakukan proses tertentu—misalnya menampilkan informasi, mencetak menu seperti pada percobaan 3 dibagian menampilkan menu.
+
+2. Fungsi hitungTotalHargaNoAbsen saat ini mengembalikan total harga berdasarkan pilihanMenu dan jumlahPesanan. Sebutkan tipe data nilai kembalian dan dua buah parameter yang digunakan fungsi tersebut. Jelaskan arti masing-masing parameter dalam konteks program kafe.
+jawaban :
+- 1. pilihanMenu, Menyimpan nomor menu yang dipilih pelanggan (1 sampai 6), dan digunakan untuk menentukan harga item berdasarkan array harga. 
+- 2. jumlahPesanan Menyimpan berapa banyak item/porsi yang dipesan, dan digunakan untuk menghitung total harga = harga satuan × jumlah pesanan.
+
+3. Modifikasi kode di atas sehingga fungsi hitungTotalHargaNoAbsen dapat menerima kodePromo. Jika kodePromo adalah "DISKON50", maka mendapat diskon 50% dari totalHarga dan tampilkan diskon. Jika kodePromo adalah "DISKON30", maka mendapat diskon 30% dari totalHarga dan tampilkan diskon. Jika tidak ada kode promo yang berlaku, tampilkan kode invalid dan tidak ada pengurangan total harga totalHarga.
+jawaban :
+
+4. Modifikasi kode di atas sehingga bisa memilih beberapa jenis menu berbeda serta menampilkan total keseluruhan pesanan. Bagaimana memodifikasi program sehingga pengguna dapat: memesan lebih dari satu jenis menu (misalnya menu 1 dan 3 sekaligus), dan menampilkan total keseluruhan pesanan (gabungan dari semua jenis menu)?
+jawaban : 
