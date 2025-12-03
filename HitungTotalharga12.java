@@ -8,13 +8,21 @@ public class HitungTotalharga12 {
       String kodePromo = sc.nextLine();
       Menu("Budi" ,true, kodePromo);
 
-      System.out.print("\nMasukkan nomor menu yang ingin Anda pesan: ");
+      System.out.print("Berapa jenis menu yang ingin Anda pesan? ");
+      int jumlahJenis = sc.nextInt();
+      int totalKeseluruhan = 0;
+        for (int i = 1; i <= jumlahJenis; i++) {
+            System.out.println("Pesanan ke-" + i);
+
+      System.out.print("Masukkan nomor menu yang ingin Anda pesan: ");
       int pilihanMenu = sc.nextInt();
       System.out.print("Masukkan jumlah item yang ingin dipesan: ");
       int banyakItem = sc.nextInt();
       int totalHarga = hitungTotalHarga (pilihanMenu, banyakItem, kodePromo);
 
       System.out.println("Total harga untuk pesanan Anda: Rp" + totalHarga);
+      totalKeseluruhan += totalHarga;
+      }
    }
    public static void Menu(String namaPelanggan, boolean isMember, String kodePromo) {
     System.out.println("Selamat datang, " + namaPelanggan + "!");
